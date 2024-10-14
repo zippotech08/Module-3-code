@@ -1,0 +1,11 @@
+using System;
+
+public class Test
+{
+    public const string Message = "Hello World";
+
+    public static void Main(string[] args)
+    {
+        // Constants are factored out at compile-time and baked into the calling site.
+        Console.WriteLine(Test.Message);
+    }
